@@ -6,4 +6,4 @@ This repository contains the tasks that I have done during the DEPI scholarship 
 
 ## Tasks Completed
 
-1. [Session 1 Task](./tasks/session1/README.md)
+1. [Basic HTML Structure](./tasks/1.0.basic-html-structure/README.md)
