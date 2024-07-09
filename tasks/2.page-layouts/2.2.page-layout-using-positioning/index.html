@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="all-content-container">
+      <header class="header">
+        <nav class="navbar">
+          <h1 class="navbar__item navbar__item--start logo">Produ<b>X</b></h1>
+          <ul
+            class="navbar__item navbar__item--center navbar__links link-group"
+          >
+            <li class="link-group__item"><a href="#">Product</a></li>
+            <li class="link-group__item"><a href="#">Features</a></li>
+            <li class="link-group__item"><a href="#">Pricing</a></li>
+            <li class="link-group__item"><a href="#">Resources</a></li>
+          </ul>
+          <div class="navbar__item navbar__item--end flex">
+            <button class="button button--transparent">Log In</button>
+            <button class="button button--primary">Sign Up</button>
+          </div>
+        </nav>
+      </header>
+      <main class="hero">
+        <section class="hero__text">
+          <button
+            class="hero__text-item button button--small button--secondary"
+          >
+            LEARN MORE >
+          </button>
+          <h1 class="hero__text-item hero__title text--white">
+            A small business is only as good as its tools.
+          </h1>
+          <p class="hero__text-item text--white text--normal">
+            We’re different. Flex is the only saas business platform that lets
+            you run your business on one platform, seamlessly across all digital
+            channels.
+          </p>
+          <div class="hero__text-item">
+            <button class="button button--primary button--large">
+              Request a Demo
+            </button>
+            <button class="button button--secondary button--large">
+              Sign Up
+            </button>
+          </div>
+        </section>
+        <section class="hero__image">
+          <img
+            src="./resources/images/laptop-illustration.png"
+            alt="Laptop Illustration"
+          />
+        </section>
+      </main>
+      <footer class="footer">
+        <h1 class="logo footer__item">Produ<b>X</b></h1>
+        <div class="footer__logos-container footer__item">
+          <p class="text--small text--gray">
+            Trusted by brands all around the world
+          </p>
+          <div class="footer__logos">
+            <img src="./resources/images/logo-1.png" alt="Logo 1" />
+            <img src="./resources/images/logo-2.png" alt="Logo 2" />
+            <img src="./resources/images/logo-3.png" alt="Logo 3" />
+            <img src="./resources/images/logo-4.png" alt="Logo 4" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
