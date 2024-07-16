@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce product page</title>
+    <link
+      rel="icon"
+      href="resources/assets/logo-base.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="./resources/style.css" />
+  </head>
+  <body class="product-page-body">
+    <aside class="sidebar">
+      <header class="sidebar__header">
+        <img
+          src="resources/assets/logo-base.svg"
+          alt="logo"
+          class="sidebar-logo"
+        />
+        <button class="btn btn--transparent sidebar__menu-btn">
+          <i class="icon-bars"></i>
+        </button>
+      </header>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span class="sidebar__nav-link-text"
+                ><i class="icon-house"></i>Home</span
+              >
+            </a>
+          </li>
+          <li class="sidebar__nav-item sidebar__nav-item--active">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span class="sidebar__nav-link-text"
+                ><i class="icon-house"></i>Discover</span
+              >
+            </a>
+            <ul class="sidebar__subnav">
+              <li class="sidebar__nav-subitem sidebar__nav-subitem--active">
+                <a href="#" class="text--gray-400">Electronics</a>
+              </li>
+              <li class="sidebar__nav-subitem">
+                <a href="#" class="text--gray-400">Clothes</a>
+              </li>
+              <li class="sidebar__nav-subitem">
+                <a href="#" class="text--gray-400">Bags</a>
+              </li>
+              <li class="sidebar__nav-subitem">
+                <a href="#" class="text--gray-400">Food</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span class="sidebar__nav-link-text"
+                ><i class="icon-box"></i>Popular Products</span
+              >
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span class="sidebar__nav-link-text"
+                ><i class="icon-user-group"></i>Top Authors</span
+              >
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span class="sidebar__nav-link-text"
+                ><i class="icon-feed-1"></i>Feed</span
+              >
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-item-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="44"
+                fill="none"
+              >
+                <path
+                  fill="#FFC831"
+                  d="M0 0v44l7.743-17.034a12 12 0 0 0 0-9.932L0 0Z"
+                />
+              </svg>
+              <span href="#" class="sidebar__nav-link-text"
+                ><i class="icon-headset"></i>Contact</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="sidebar__footer">
+        <ul>
+          <li class="sidebar__nav-item-content">
+            <a class="sidebar__nav-link" href="#"
+              ><i class="icon-gear"></i>settings</a
+            >
+          </li>
+          <li class="sidebar__nav-item-content">
+            <a class="sidebar__nav-link" href="#"
+              ><i class="icon-question"></i>help</a
+            >
+          </li>
+        </ul>
+        <div class="sidebar__footer-copyright-links">
+          <ul class="links-list links-list--horizontal">
+            <li class="links-list__item text--sm"><a href="#">Terms</a></li>
+            <li class="links-list__item text--sm"><a href="#">Privacy</a></li>
+            <li class="links-list__item text--sm"><a href="#">Help</a></li>
+          </ul>
+          <p class="text--gray-500 text--sm">Copyright 2024 by Ui-Lib</p>
+        </div>
+      </footer>
+    </aside>
+    <main class="main">
+      <nav class="main__navbar">
+        <label class="search-box" for="search">
+          <button class="btn btn--transparent">
+            <i class="icon-search"></i>
+          </button>
+          <input type="text" placeholder="search" id="search" />
+          <button class="btn btn--transparent">
+            <i class="icon-microphone"></i>
+          </button>
+        </label>
+
+        <div class="main__navbar-links">
+          <a href="#"><i class="icon-moon"></i></a>
+          <a href="#" class="badge-container">
+            <i class="icon-bell"></i>
+            <span class="badge"></span>
+          </a>
+          <a href="#"><i class="icon-cart"></i></a>
+          <button class="btn btn--primary btn--rounded-xl">
+            Become a seller
+          </button>
+
+          <div class="profile-picture-container">
+            <svg
+              class="profile-picture-container__border"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="none"
+            >
+              <path
+                fill="#FFC831"
+                fill-rule="evenodd"
+                d="M39.861 22.366a20.158 20.158 0 0 0-.082-5.352 1.25 1.25 0 0 0-1.1 1.35 19.007 19.007 0 0 1 0 3.273 1.25 1.25 0 0 0 1.1 1.349c.03-.206.058-.412.082-.62Zm-1.237 4.94a1.25 1.25 0 0 0-1.626.62 18.732 18.732 0 0 1-1.637 2.829 1.25 1.25 0 0 0 .274 1.718 20.152 20.152 0 0 0 .75-1 19.977 19.977 0 0 0 2.239-4.167Zm-6.151 8.33a1.25 1.25 0 0 0-1.718-.275 18.732 18.732 0 0 1-2.83 1.637 1.25 1.25 0 0 0-.62 1.626 19.637 19.637 0 0 0 1.15-.494 19.975 19.975 0 0 0 4.018-2.495Zm-9.487 4.143a1.25 1.25 0 0 0-1.35-1.1 19.007 19.007 0 0 1-3.273 0 1.25 1.25 0 0 0-1.349 1.1A20.011 20.011 0 0 0 20 40a20.291 20.291 0 0 0 2.986-.221Zm-10.292-1.155a1.25 1.25 0 0 0-.62-1.626 18.732 18.732 0 0 1-2.829-1.637 1.25 1.25 0 0 0-1.718.274 20.175 20.175 0 0 0 1 .75 19.978 19.978 0 0 0 4.167 2.239Zm-8.33-6.151a1.25 1.25 0 0 0 .275-1.718 18.73 18.73 0 0 1-1.637-2.83 1.25 1.25 0 0 0-1.626-.62 19.775 19.775 0 0 0 .494 1.15 19.981 19.981 0 0 0 2.495 4.018ZM.222 22.986a1.25 1.25 0 0 0 1.1-1.35 19.011 19.011 0 0 1 0-3.273 1.25 1.25 0 0 0-1.1-1.349A19.993 19.993 0 0 0 0 20a20.26 20.26 0 0 0 .221 2.986Zm1.155-10.292a1.25 1.25 0 0 0 1.626-.62A18.73 18.73 0 0 1 4.64 9.246a1.25 1.25 0 0 0-.274-1.718 20.078 20.078 0 0 0-2.751 4.589c-.082.191-.161.384-.238.578Zm6.151-8.33a1.25 1.25 0 0 0 1.718.275 18.73 18.73 0 0 1 2.83-1.637 1.25 1.25 0 0 0 .62-1.626 19.775 19.775 0 0 0-1.15.494 19.976 19.976 0 0 0-4.018 2.495ZM17.014.222a1.25 1.25 0 0 0 1.35 1.1 19.011 19.011 0 0 1 3.273 0 1.25 1.25 0 0 0 1.349-1.1A19.993 19.993 0 0 0 20 0a20.26 20.26 0 0 0-2.986.221Zm10.292 1.155a1.25 1.25 0 0 0 .62 1.626 18.73 18.73 0 0 1 2.829 1.637 1.25 1.25 0 0 0 1.718-.274 20.055 20.055 0 0 0-5.167-2.989Zm8.33 6.151a1.25 1.25 0 0 0-.275 1.718c.624.89 1.173 1.836 1.637 2.83a1.25 1.25 0 0 0 1.626.62 19.637 19.637 0 0 0-.494-1.15 19.97 19.97 0 0 0-2.495-4.018Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <img
+              src="../3.ecommerce-product-page/resources/assets/images/profile-picture.jpg"
+              alt="User profile picture"
+            />
+          </div>
+        </div>
+      </nav>
+      <header class="main__header">
+        <span class="text--gray-500 text--sm">
+          <a href="#" class="text--gray-500">Discover</a> /
+          <a href="#" class="text--gray-500">Electronics</a>
+        </span>
+        <h3 class="text--white text--semi-bold text--lg">
+          Best Selling Products - Weekly Update
+        </h3>
+      </header>
+
+      <div class="categories-container">
+        <div class="categories">
+          <a href="#" class="tag text--sm tag--white">All</a>
+          <a href="#" class="tag text--sm">Phones</a>
+          <a href="#" class="tag text--sm">Laptops</a>
+          <a href="#" class="tag text--sm">Tablets</a>
+          <a href="#" class="tag text--sm">Accessories</a>
+          <a href="#" class="tag text--sm">Cameras</a>
+          <a href="#" class="tag text--sm">Smartwatches</a>
+          <a href="#" class="tag text--sm">Headphones</a>
+        </div>
+        <a href="#" class="tag text--sm"><i class="icon-right-solid"></i></a>
+      </div>
+
+      <section class="products">
+        <div class="products__item">
+          <img
+            src="resources/assets/images/macbook.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  MacBook Pro 13” Big Discount
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-2.png"
+            alt="Product 2"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Joystick Game Controller
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-3.png"
+            alt="Product 3"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Mavic Air Phantom 4 pro
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-4.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Nikon D7500 20.9 Mp Touchscreen
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-5.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Apple Airpods Pro White
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-6.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Apple iMac Retina 5K 27"
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-7.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  Apple iPhone X 256GB 3GB RAM
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-8.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  BEATS SOLO PRO 1 Wireless Headphone
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__item">
+          <img
+            src="resources/assets/images/product-9.png"
+            alt="Product 1"
+            class="products__item-product-image"
+          />
+          <div class="products__item-details">
+            <img
+              class="products__item-seller-image"
+              src="./resources/assets/images/profile-picture.jpg"
+              alt="seller image"
+            />
+
+            <div class="products__item-text">
+              <div>
+                <h4 class="text--white text--semi-bold text--sm">
+                  TP-Link Archer AX53 AX3000 Dual Band
+                </h4>
+                <p class="text--gray-500 text--sm">Eshop Spot</p>
+              </div>
+
+              <div class="product__item-price-group">
+                <div>
+                  <p class="text--white text--sm products__item-price">
+                    <span
+                      class="text--gray-500 text--sm text--primary text--semi-bold"
+                      >$1,299.00</span
+                    >
+                    <span class="text--gray-500 text--sm text--crossed"
+                      >$1,999.00</span
+                    >
+                  </p>
+                  <p class="text--gray-500 text--xs products__item-rating">
+                    <span>15 sales</span>
+                    <span>
+                      <i class="icon-star icon-start--primary"></i>
+                      5.0(10)
+                    </span>
+                  </p>
+                </div>
+
+                <button class="btn btn--transparent product__item-add-to-cart">
+                  <i class="icon-cart-plus-solid"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper wrapper--center-content">
+        <button class="btn btn--primary btn--rounded-xl">Load more</button>
+      </div>
+    </main>
+  </body>
+</html>
