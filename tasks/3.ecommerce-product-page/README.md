@@ -2,6 +2,8 @@
 
 This project is a front-end representation of an ecommerce product page designed to provide a seamless and interactive shopping experience.
 
+## [🔗 Live Preview](https://ecommerce-product-page-clh.pages.dev)
+
 ## Deisgn Preview
 
 [Original design link](https://www.figma.com/community/file/1226930260218793008/protech-minimal-ecommerce-template)
